@@ -81,10 +81,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Barbería premium en Santo Domingo. Cortes modernos, afeitados tradicionales y una experiencia como en casa. Reserva tu cita hoy." },
       { name: "author", content: "Cabellería Barber Shop" },
       { property: "og:title", content: "Cabellería Barber Shop | Barbería Premium en Santo Domingo" },
-      { property: "og:description", content: "Cortes modernos, afeitados tradicionales y una experiencia como en casa en el corazón de Santo Domingo." },
+      { property: "og:description", content: "Barbería premium en Santo Domingo. Cortes modernos, afeitados tradicionales y una experiencia como en casa. Reserva tu cita hoy." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@cabelleria" },
+      { name: "twitter:title", content: "Cabellería Barber Shop | Barbería Premium en Santo Domingo" },
+      { name: "twitter:description", content: "Barbería premium en Santo Domingo. Cortes modernos, afeitados tradicionales y una experiencia como en casa. Reserva tu cita hoy." },
+      { property: "og:image", content: "https://id-preview--ba6a8d3c-f63a-425c-9dfd-6e356078c2c3.lovable.app/og.jpg" },
+      { name: "twitter:image", content: "https://id-preview--ba6a8d3c-f63a-425c-9dfd-6e356078c2c3.lovable.app/og.jpg" },
     ],
     links: [
       {
