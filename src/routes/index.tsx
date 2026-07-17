@@ -13,7 +13,6 @@ import {
   Facebook,
   MessageCircle,
   ChevronDown,
-  Check,
 } from "lucide-react";
 import heroImg from "@/assets/hero.jpg";
 import g1 from "@/assets/gallery-1.jpg";
