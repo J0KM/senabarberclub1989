@@ -15,12 +15,19 @@ import {
   ChevronDown,
 } from "lucide-react";
 import heroImg from "@/assets/hero.png.asset.json";
-import g1 from "@/assets/gallery-8.png.asset.json";
-import g2 from "@/assets/gallery-9.png.asset.json";
-import g3 from "@/assets/gallery-10.png.asset.json";
-import g4 from "@/assets/gallery-11.png.asset.json";
-import g5 from "@/assets/gallery-12.png.asset.json";
-import g6 from "@/assets/gallery-13.png.asset.json";
+
+// Auto-descubre cualquier imagen de galería en src/assets (gallery-*.{png,jpg,jpeg,webp}.asset.json)
+const galleryModules = import.meta.glob<{ url: string }>(
+  "@/assets/gallery-*.{png,jpg,jpeg,webp}.asset.json",
+  { eager: true, import: "default" }
+);
+const gallery = Object.entries(galleryModules)
+  .sort(([a], [b]) => {
+    const na = Number(a.match(/gallery-(\d+)/)?.[1] ?? 0);
+    const nb = Number(b.match(/gallery-(\d+)/)?.[1] ?? 0);
+    return na - nb;
+  })
+  .map(([, mod]) => mod);
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -41,8 +48,6 @@ const services = [
   { name: "Corte Junior", desc: "Corte especial para niños hasta 12 años.", price: "RD$ 400", time: "25 min" },
   { name: "Diseño de Cejas", desc: "Perfilado masculino con detalle a navaja.", price: "RD$ 250", time: "15 min" },
 ];
-
-const gallery = [g1, g2, g3, g4, g5, g6];
 
 const testimonials = [
   { name: "Andrés R.", text: "El mejor corte que me han hecho en Santo Domingo. Ambiente relajado, atención de otro nivel.", stars: 5 },
