@@ -6,7 +6,6 @@ import {
   MapPin,
   Phone,
   Clock,
-  Users,
   Award,
   Calendar,
   Instagram,
@@ -21,9 +20,6 @@ import g3 from "@/assets/gallery-3.jpg";
 import g4 from "@/assets/gallery-4.jpg";
 import g5 from "@/assets/gallery-5.jpg";
 import g6 from "@/assets/gallery-6.jpg";
-import b1 from "@/assets/barber-1.jpg";
-import b2 from "@/assets/barber-2.jpg";
-import b3 from "@/assets/barber-3.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -46,12 +42,6 @@ const services = [
 ];
 
 const gallery = [g1, g2, g3, g4, g5, g6];
-
-const team = [
-  { name: "Luis Martínez", role: "Master Barber · Fades", img: b1 },
-  { name: "Carlos Peña", role: "Diseños & Cortes Modernos", img: b2 },
-  { name: "Don Rafael", role: "Afeitado Tradicional", img: b3 },
-];
 
 const testimonials = [
   { name: "Andrés R.", text: "El mejor corte que me han hecho en Santo Domingo. Ambiente relajado, atención de otro nivel.", stars: 5 },
@@ -129,7 +119,7 @@ function Index() {
             { icon: Star, label: "5 / 5", sub: "Google Reviews" },
             { icon: Award, label: "+20 años", sub: "de experiencia" },
             { icon: Users, label: "+15,000", sub: "clientes atendidos" },
-            { icon: MapPin, label: "Santo Domingo", sub: "C. DAVID BEN GURION 101" },
+            { icon: MapPin, label: "Santo Domingo", sub: "C. David Ben Gurion 101" },
           ].map(({ icon: Icon, label, sub }) => (
             <div key={label} className="flex items-center gap-4">
               <Icon className="h-8 w-8 shrink-0 text-gold" />
@@ -178,24 +168,6 @@ function Index() {
         </div>
       </section>
 
-      {/* EQUIPO */}
-      <section id="equipo" className="mx-auto max-w-7xl px-6 py-24">
-        <SectionTitle eyebrow="Equipo" title="Manos expertas, corte a corte" />
-        <div className="mt-16 grid gap-8 md:grid-cols-3">
-          {team.map((m) => (
-            <div key={m.name} className="group">
-              <div className="relative overflow-hidden rounded-sm border border-border">
-                <img src={m.img} alt={m.name} loading="lazy" width={700} height={900} className="aspect-[3/4] w-full object-cover transition duration-700 group-hover:scale-105" />
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background via-background/70 to-transparent p-6">
-                  <h3 className="font-display text-2xl tracking-wider">{m.name}</h3>
-                  <p className="mt-1 text-xs uppercase tracking-widest text-gold">{m.role}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* TESTIMONIOS */}
       <section className="border-y border-border bg-card/40">
         <div className="mx-auto max-w-7xl px-6 py-24">
@@ -223,7 +195,7 @@ function Index() {
           <div className="overflow-hidden rounded-sm border border-border">
             <iframe
               title="Mapa"
-              src="https://www.google.com/maps?q=Piantini,+Santo+Domingo&output=embed"
+              src="https://www.google.com/maps?q=Calle+David+Ben+Gurion+101,+Santo+Domingo&output=embed"
               className="h-full min-h-[400px] w-full grayscale"
               loading="lazy"
             />
@@ -231,14 +203,14 @@ function Index() {
           <div className="flex flex-col justify-center gap-8 rounded-sm border border-border bg-card p-10">
             <div>
               <p className="text-xs uppercase tracking-widest text-gold">Dirección</p>
-              <p className="mt-2 font-display text-2xl">Av. Roberto Pastoriza 152,<br />Piantini, Santo Domingo</p>
+              <p className="mt-2 font-display text-2xl">C. David Ben Gurion 101,<br />Santo Domingo</p>
             </div>
             <div>
               <p className="text-xs uppercase tracking-widest text-gold">Horario</p>
               <div className="mt-2 space-y-1 text-muted-foreground">
-                <p><span className="text-foreground">Lun – Vie</span> · 9:00 AM – 8:00 PM</p>
-                <p><span className="text-foreground">Sábado</span> · 8:00 AM – 9:00 PM</p>
-                <p><span className="text-foreground">Domingo</span> · 10:00 AM – 4:00 PM</p>
+                <p><span className="text-foreground">Lunes a viernes</span> · 9:00 a.m. – 7:00 p.m.</p>
+                <p><span className="text-foreground">Sábado</span> · 9:00 a.m. – 7:00 p.m.</p>
+                <p><span className="text-foreground">Domingo</span> · Cerrado</p>
               </div>
             </div>
             <div className="flex flex-wrap gap-3">
