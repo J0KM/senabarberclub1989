@@ -161,7 +161,7 @@ function Index() {
           <div className="mt-16 grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4">
             {gallery.map((src, i) => (
               <div key={i} className={`group relative overflow-hidden rounded-sm ${i === 0 ? "md:col-span-2 md:row-span-2" : ""}`}>
-                <img src={src} alt={`Trabajo ${i + 1}`} loading="lazy" width={800} height={800} className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
+                <img src={src.url} alt={`Trabajo ${i + 1}`} loading="lazy" width={800} height={800} className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 transition group-hover:opacity-100" />
               </div>
             ))}
