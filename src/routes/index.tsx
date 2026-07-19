@@ -15,12 +15,12 @@ import {
   ChevronDown,
 } from "lucide-react";
 import heroImg from "@/assets/hero.png.asset.json";
-import g1 from "@/assets/gallery-2.png.asset.json";
-import g2 from "@/assets/gallery-3.png.asset.json";
-import g3 from "@/assets/gallery-4.png.asset.json";
-import g4 from "@/assets/gallery-5.png.asset.json";
-import g5 from "@/assets/gallery-6.png.asset.json";
-import g6 from "@/assets/gallery-7.png.asset.json";
+import g1 from "@/assets/gallery-8.png.asset.json";
+import g2 from "@/assets/gallery-9.png.asset.json";
+import g3 from "@/assets/gallery-10.png.asset.json";
+import g4 from "@/assets/gallery-11.png.asset.json";
+import g5 from "@/assets/gallery-12.png.asset.json";
+import g6 from "@/assets/gallery-13.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
