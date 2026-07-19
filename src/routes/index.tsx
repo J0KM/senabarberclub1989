@@ -78,7 +78,7 @@ function Index() {
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
           <a href="#top" className="flex items-center gap-2">
             <Scissors className="h-5 w-5 text-gold" />
-            <span className="font-display text-xl tracking-widest">CABELLERÍA</span>
+            <span className="font-display text-xl tracking-widest lowercase">sena barber club 1989</span>
           </a>
           <nav className="hidden gap-8 text-sm uppercase tracking-wider text-muted-foreground md:flex">
             <a href="#servicios" className="hover:text-gold">Servicios</a>
@@ -99,8 +99,8 @@ function Index() {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/40" />
         <div className="relative mx-auto grid w-full max-w-7xl gap-6 px-6 py-32">
           <div className="max-w-2xl">
-            <p className="mb-6 flex items-center gap-3 text-xs uppercase tracking-[0.4em] text-gold">
-              <span className="h-px w-10 bg-gold" /> Santo Domingo · Est. 2015
+            <p className="mb-6 flex items-center gap-3 text-xs uppercase tracking-[0.4em] text-gold whitespace-pre-line">
+              <span className="h-px w-10 bg-gold" /> SANTO DOMINGO · EST. 1989{"\n\n"}
             </p>
             <h1 className="font-display text-6xl leading-[0.9] md:text-8xl">
               Un corte<br />
@@ -126,10 +126,10 @@ function Index() {
       <section className="border-y border-border bg-card">
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6 px-6 py-10 md:grid-cols-4">
           {[
-            { icon: Star, label: "4.9 / 5", sub: "Google Reviews" },
-            { icon: Award, label: "+10 años", sub: "de experiencia" },
+            { icon: Star, label: "5 / 5", sub: "Google Reviews" },
+            { icon: Award, label: "+20 años", sub: "de experiencia" },
             { icon: Users, label: "+15,000", sub: "clientes atendidos" },
-            { icon: MapPin, label: "Santo Domingo", sub: "Piantini · Naco" },
+            { icon: MapPin, label: "Santo Domingo", sub: "C. DAVID BEN GURION 101" },
           ].map(({ icon: Icon, label, sub }) => (
             <div key={label} className="flex items-center gap-4">
               <Icon className="h-8 w-8 shrink-0 text-gold" />
