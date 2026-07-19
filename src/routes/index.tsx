@@ -282,7 +282,7 @@ function Index() {
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 text-xs uppercase tracking-widest text-muted-foreground md:flex-row">
           <div className="flex items-center gap-2">
             <Scissors className="h-4 w-4 text-gold" />
-            <span>Cabellería Barber Shop · Santo Domingo</span>
+            <span>SENA BARBER CLUB 1989{"\n"}</span>
           </div>
           <div>© {new Date().getFullYear()} · Todos los derechos reservados</div>
         </div>
