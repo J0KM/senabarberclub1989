@@ -14,7 +14,7 @@ import {
   MessageCircle,
   ChevronDown,
 } from "lucide-react";
-import heroImg from "@/assets/hero.jpg";
+import heroImg from "@/assets/hero.png.asset.json";
 import g1 from "@/assets/gallery-1.jpg";
 import g2 from "@/assets/gallery-2.jpg";
 import g3 from "@/assets/gallery-3.jpg";
@@ -85,7 +85,7 @@ function Index() {
 
       {/* HERO */}
       <section id="top" className="relative flex min-h-screen items-center overflow-hidden">
-        <img src={heroImg} alt="Interior de Cabellería Barber Shop" className="absolute inset-0 h-full w-full object-cover" width={1024} height={1024} />
+        <img src={heroImg.url} alt="Interior de Sena Barber Club" className="absolute inset-0 h-full w-full object-cover" width={1024} height={1024} />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/40" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/40" />
         <div className="relative mx-auto grid w-full max-w-7xl gap-6 px-6 py-32">
