@@ -15,12 +15,12 @@ import {
   ChevronDown,
 } from "lucide-react";
 import heroImg from "@/assets/hero.png.asset.json";
-import g1 from "@/assets/gallery-1.jpg";
-import g2 from "@/assets/gallery-2.jpg";
-import g3 from "@/assets/gallery-3.jpg";
-import g4 from "@/assets/gallery-4.jpg";
-import g5 from "@/assets/gallery-5.jpg";
-import g6 from "@/assets/gallery-6.jpg";
+import g1 from "@/assets/gallery-2.png.asset.json";
+import g2 from "@/assets/gallery-3.png.asset.json";
+import g3 from "@/assets/gallery-4.png.asset.json";
+import g4 from "@/assets/gallery-5.png.asset.json";
+import g5 from "@/assets/gallery-6.png.asset.json";
+import g6 from "@/assets/gallery-7.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -31,7 +31,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const RESERVE_URL = "https://wa.me/18095550123?text=Hola%20quiero%20reservar%20una%20cita";
+const RESERVE_URL = "https://wa.me/18093795878?text=Hola%20quiero%20reservar%20una%20cita";
 
 const services = [
   { name: "Corte Clásico", desc: "Corte a tijera y máquina con acabado profesional.", price: "RD$ 500", time: "30 min" },
@@ -218,7 +218,7 @@ function Index() {
               <a href={RESERVE_URL} className="inline-flex items-center gap-2 rounded-sm bg-gold px-6 py-3 text-sm font-bold uppercase tracking-widest text-gold-foreground hover:opacity-90">
                 <MessageCircle className="h-4 w-4" /> WhatsApp
               </a>
-              <a href="tel:+18095550123" className="inline-flex items-center gap-2 rounded-sm border border-border px-6 py-3 text-sm font-bold uppercase tracking-widest hover:border-gold hover:text-gold">
+              <a href="tel:+18093795878" className="inline-flex items-center gap-2 rounded-sm border border-border px-6 py-3 text-sm font-bold uppercase tracking-widest hover:border-gold hover:text-gold">
                 <Phone className="h-4 w-4" /> Llamar
               </a>
             </div>
@@ -265,8 +265,8 @@ function Index() {
           </a>
           <div className="mt-10 flex justify-center gap-4">
             {[
-              { Icon: Instagram, href: "https://instagram.com" },
-              { Icon: Facebook, href: "https://facebook.com" },
+              { Icon: Instagram, href: "https://www.instagram.com/senabarberclub_1989/" },
+              { Icon: Facebook, href: "https://www.facebook.com/people/Sena-Barbershop-1989/61560201747243/" },
               { Icon: MessageCircle, href: RESERVE_URL },
             ].map(({ Icon, href }, i) => (
               <a key={i} href={href} className="rounded-sm border border-border p-3 text-muted-foreground transition hover:border-gold hover:text-gold">
