@@ -17,13 +17,13 @@ import {
   Users,
 } from "lucide-react";
 
-import heroAsset from "@/assets/hero.png.asset.json";
-import gallery8Asset from "@/assets/gallery-8.png.asset.json";
-import gallery9Asset from "@/assets/gallery-9.png.asset.json";
-import gallery10Asset from "@/assets/gallery-10.png.asset.json";
-import gallery11Asset from "@/assets/gallery-11.png.asset.json";
-import gallery12Asset from "@/assets/gallery-12.png.asset.json";
-import gallery13Asset from "@/assets/gallery-13.png.asset.json";
+import heroAsset from "@/assets/hero.jpg.asset.json";
+import gallery8Asset from "@/assets/gallery-8.jpg.asset.json";
+import gallery9Asset from "@/assets/gallery-9.jpg.asset.json";
+import gallery10Asset from "@/assets/gallery-10.jpg.asset.json";
+import gallery11Asset from "@/assets/gallery-11.jpg.asset.json";
+import gallery12Asset from "@/assets/gallery-12.jpg.asset.json";
+import gallery13Asset from "@/assets/gallery-13.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
